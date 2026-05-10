@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+    />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>John Hu</h1>
+    <p class="subtitle">Engineering Student | All things Robotics | Software</p>
+
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#creative">Creative</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section class="section about">
+    <h2>About Me</h2>
+    <p>
+      I am an engineering student with interests in robotics, mechatronics,
+      and software systems. I enjoy building projects that combine hardware
+      and code, and I am currently seeking internships and research opportunities for S2026.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h2>Ongoing Projects</h2>
+
+    <!--<div class="project">
+      <h3>Autonomous Robot Navigation</h3>
+      <p>
+        Built a differential-drive robot using ROS and Python that performs
+        obstacle avoidance and mapping using LIDAR.
+      </p>
+      <p class="tech">Tech: ROS, Python, C++, Linux</p>
+      <a href="https://github.com/yourusername/project" target="_blank">
+        View on GitHub →
+      </a>
+    </div>-->
+    
+
+    <div class="project">
+      <h3>Miniature Cycloidal Drive</h3>
+      <p>
+        Designed and built a small scale cycloidal drive using Fusion360,
+        a bunch of PLA, and Aliexpress ball bearings. Testing to come shortly. 
+      </p>
+      <p class="tech">Tech: Git</p>
+      <div class="tech-icons">
+        <img src="assets/icons/fusion.svg" alt="Fusion" />
+        <img src="assets/icons/arduino.svg" alt="Arduino" />
+        <img src="assets/icons/ros.svg" alt="ROS" />
+      </div>
+      
+    </div>
+    <div class="project">
+      <h3>FPGA Dev with Tang Nano</h3>
+      <p>
+        Wrote basic Verilog code for LED Blink on the Tang Nano FPGA board. 
+      </p>
+      <p class="tech">Tech: Verilog, Gowin IDE</p>
+      <div class="tech-icons">
+      </div>
+      
+    </div>
+
+    
+    
+  </section>
+
+  <!-- Creative: YouTube edits — replace VIDEO_ID with the id from your video URL (youtube.com/watch?v=VIDEO_ID) -->
+  <section class="section" id="creative">
+    <h2>Creative</h2>
+    <p class="creative-intro">
+      Video edits and motion work. I mainly use Adobe Premiere Pro and After Effects as well as AI video generation like Sora. 
+      All music and source clips belong to their respective authors. 
+    </p>
+
+    <div class="video-grid">
+      <article class="video-card">
+        <h3>Anime edit</h3>
+        <h4>03022026</h4>
+        <div class="video-embed">
+          <iframe
+            src="https://youtu.be/LqYh7OZxWHU"
+            title="Video edit — replace src with your YouTube embed URL"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <h3>Edit i made for YHack 2026</h3>
+        <h4>04022026</h4>
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/watch?v=ct_zdg39dPU"
+            title="Video edit — replace src with your YouTube embed URL"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <h3>Gradient background in AE</h3>
+        <h4>03022026</h4>
+        <div class="video-embed">
+          <iframe
+            src="https://youtu.be/riMKLcxLbdk"
+            title="Video edit — replace src with your YouTube embed URL"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </article>
+
+      <!-- Thumbnail-only card: swap src to your image (e.g. PNG/JPEG/WebP in assets/) -->
+      <article class="video-card">
+        <h3>AI Short Film</h3>
+        <h4>Made with domo ai and ElevenLabs</h4>
+        <div class="video-embed video-embed--thumb">
+          <img
+            src="assets\9afeb07f-6de4-4f7d-8ef8-84221bc414b0_edited.jpg"
+            alt="Thumbnail preview for Gradient background in After Effects"
+            width="1280"
+            height="720"
+            loading="lazy"
+          />
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section class="section" id="resume">
+    <h2>Portfolio</h2>
+
+    <iframe
+      src="https://drive.google.com/file/d/1Ui_gbgPGTG7PmlIRMP1iXweMcKte5qZS/preview"
+      title="Resume"
+      class="resume-frame"
+    ></iframe>
+
+    <a class="download-btn" href="https://drive.google.com/file/d/1Ui_gbgPGTG7PmlIRMP1iXweMcKte5qZS/preview" download>
+      Download PDF
+    </a>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to send me a message about anything. Yes anything :)</p>
+    <p>Email: johnhu1235@gmail.com</p>
+    <p>
+      <a href="https://github.com/hujohn1" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/johnhu2/" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Your Name
+  </footer>
+
+</body>
+</html>
