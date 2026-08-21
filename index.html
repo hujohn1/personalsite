@@ -3,187 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Engineering Portfolio</title>
+  <title>John's Personal Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-    />
 </head>
 <body>
+  <div class="page">
+    <header class="header">
+      <h1><a href="index.html">John's Personal Portfolio</a></h1>
+      <nav>
+        <a href="index.html#projects">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="media.html">Media</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
 
-  <!-- Header -->
-  <header class="header">
-    <h1>John Hu</h1>
-    <p class="subtitle">Engineering Student | All things Robotics | Software</p>
+    <main>
+      <section class="section about">
+        <h2>About Me</h2>
+        <p>
+          I'm John Hu, an engineering student with interests in mechatronics, power electronics, and analog circuit design. I studied Electrical &amp; Computer Engineering at <a href="https://www.duke.edu/" target="_blank" rel="noopener">Duke University</a>, where I currently work as a Research assistant at a physics lab.
+          I also act as the club president for Duke Hyperloop, where I lead, organize, and work with a team of students to make a concept Hyperloop system. 
+          <br><br>
+          Scroll down to see some of my current projects.
+        </p>
+      </section>
 
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#creative">Creative</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+      <section class="section" id="projects">
+        <h2>Ongoing Projects</h2>
 
-  <!-- About -->
-  <section class="section about">
-    <h2>About Me</h2>
-    <p>
-      I am an engineering student with interests in robotics, mechatronics,
-      and software systems. I enjoy building projects that combine hardware
-      and code, and I am currently seeking internships and research opportunities for S2026.
-    </p>
-  </section>
+        <div class="project-grid">
+          <a href="projects/scara-robot-arm.html" class="project-tile">
+            <img
+              class="project-tile__photo"
+              src="assets/photos/scaraarmv0.jpeg"
+              alt=""
+            />
+            <span class="project-tile__title">Scara Robot Arm</span>
+            <div class="project-tile__overlay">
+              <p class="project-tile__desc">
+                Designed and built a small scale SCARA robot arm with a 5:1 reduction.
+              </p>
+            </div>
+          </a>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <h2>Ongoing Projects</h2>
+          <a href="projects/cycloidal-drive.html" class="project-tile">
+            <img
+              class="project-tile__photo"
+              src="assets/photos/cycloidaldrivecad.png"
+              alt=""
+            />
+            <span class="project-tile__title">Miniature Cycloidal Drive</span>
+            <div class="project-tile__overlay">
+              <p class="project-tile__desc">
+                Designed and built a small scale cycloidal drive using Fusion360,
+                PLA, and Aliexpress ball bearings. Testing to come shortly.
+              </p>
+            </div>
+          </a>
 
-    <!--<div class="project">
-      <h3>Autonomous Robot Navigation</h3>
-      <p>
-        Built a differential-drive robot using ROS and Python that performs
-        obstacle avoidance and mapping using LIDAR.
-      </p>
-      <p class="tech">Tech: ROS, Python, C++, Linux</p>
-      <a href="https://github.com/yourusername/project" target="_blank">
-        View on GitHub →
-      </a>
-    </div>-->
-    
-
-    <div class="project">
-      <h3>Miniature Cycloidal Drive</h3>
-      <p>
-        Designed and built a small scale cycloidal drive using Fusion360,
-        a bunch of PLA, and Aliexpress ball bearings. Testing to come shortly. 
-      </p>
-      <p class="tech">Tech: Git</p>
-      <div class="tech-icons">
-        <img src="assets/icons/fusion.svg" alt="Fusion" />
-        <img src="assets/icons/arduino.svg" alt="Arduino" />
-        <img src="assets/icons/ros.svg" alt="ROS" />
-      </div>
+          <a href="projects/fpga-tang-nano.html" class="project-tile">
+            <span class="project-tile__title">FPGA Dev with Tang Nano</span>
+            <div class="project-tile__overlay">
+              <p class="project-tile__desc">
+                Wrote basic Verilog code for LED blink on the Tang Nano FPGA board.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
       
-    </div>
-    <div class="project">
-      <h3>FPGA Dev with Tang Nano</h3>
-      <p>
-        Wrote basic Verilog code for LED Blink on the Tang Nano FPGA board. 
-      </p>
-      <p class="tech">Tech: Verilog, Gowin IDE</p>
-      <div class="tech-icons">
-      </div>
-      
-    </div>
+      <section class="section" id="setup">
+        <h2>Setup</h2>
+        <p>
+          My current home bench setup.
+        </p>
+        <ul>
+          <li>Digilent Logic analyzer, Analog discovery (1st edition), PPS</li>
+          <li>Bunch of analog ICs, ESPs, and various microcontrollers I found</li>
+        </ul>
+        <img
+          class="setup-photo"
+          src="assets/photos/homesetup.jpeg"
+          alt="Home bench setup"
+          width="360"
+          height="220"
+        />
+        <p>
+          My current away bench setup.
+        </p>
+        <ul>
+          <li>School oscilloscope, signal generator, PPS</li>
+        </ul>
+      </section>
 
-    
-    
-  </section>
+      <section class="section" id="interests">
+        <h2>Interests</h2>
+        <p>
+          Outside of "work", I enjoy learning various facets of music production, DAWs, and playing piano.
+        </p>
+      </section>
 
-  <!-- Creative: YouTube edits — replace VIDEO_ID with the id from your video URL (youtube.com/watch?v=VIDEO_ID) -->
-  <section class="section" id="creative">
-    <h2>Creative</h2>
-    <p class="creative-intro">
-      Video edits and motion work. I mainly use Adobe Premiere Pro and After Effects as well as AI video generation like Sora. 
-      All music and source clips belong to their respective authors. 
-    </p>
-
-    <div class="video-grid">
-      <article class="video-card">
-        <h3>Anime edit</h3>
-        <h4>03022026</h4>
-        <div class="video-embed">
-          <iframe
-            src="https://www.youtube.com/embed/LqYh7OZxWHU?si=C9c1q1X4nSe1JpOQ"
-            title="Video edit — replace src with your YouTube embed URL"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
+      <section class="section contact" id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to send me a message about anything. Yes anything :)</p>
+        <p>Email: <a href="mailto:johnhu1235@gmail.com">johnhu1235@gmail.com</a></p>
+        <div class="social-icons">
+          <a href="https://github.com/hujohn1" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.178 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/johnhu2/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://x.com/JohnHu314686" target="_blank" rel="noopener" aria-label="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61556560500697" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@hujohn1" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.546 12 3.546 12 3.546s-7.505 0-9.377.504A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.504 9.376.504 9.376.504s7.505 0 9.377-.504a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
         </div>
-      </article>
+      </section>
+    </main>
 
-      <article class="video-card">
-        <h3>Edit i made for YHack 2026</h3>
-        <h4>04022026</h4>
-        <div class="video-embed">
-          <iframe
-            src="https://www.youtube.com/embed/ct_zdg39dPU?si=SbhVvU2YxiwedjwQ"
-            title="Video edit — replace src with your YouTube embed URL"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
-        </div>
-      </article>
-
-      <article class="video-card">
-        <h3>Gradient background in AE</h3>
-        <h4>03022026</h4>
-        <div class="video-embed">
-          <iframe
-            src="https://www.youtube.com/embed/riMKLcxLbdk?si=iljjjWWtJULhSvFR"
-            title="Video edit — replace src with your YouTube embed URL"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            loading="lazy"
-          ></iframe>
-        </div>
-      </article>
-
-    
-      <!-- Thumbnail-only card: swap src to your image (e.g. PNG/JPEG/WebP in assets/) -->
-      <article class="video-card">
-        <h3>AI Short Film</h3>
-        <h4>Made with domo ai and ElevenLabs</h4>
-        <div class="video-embed video-embed--thumb">
-          <img
-            src="assets\9afeb07f-6de4-4f7d-8ef8-84221bc414b0_edited.jpg"
-            alt="Thumbnail preview for Gradient background in After Effects"
-            width="1280"
-            height="720"
-            loading="lazy"
-          />
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Resume -->
-  <section class="section" id="resume">
-    <h2>Portfolio</h2>
-
-    <iframe
-      src="https://drive.google.com/file/d/1Ui_gbgPGTG7PmlIRMP1iXweMcKte5qZS/preview"
-      title="Resume"
-      class="resume-frame"
-    ></iframe>
-
-    <a class="download-btn" href="https://drive.google.com/file/d/1Ui_gbgPGTG7PmlIRMP1iXweMcKte5qZS/preview" download>
-      Download PDF
-    </a>
-  </section>
-
-  <!-- Contact -->
-  <section class="section contact" id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to send me a message about anything. Yes anything :)</p>
-    <p>Email: johnhu1235@gmail.com</p>
-    <p>
-      <a href="https://github.com/hujohn1" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/johnhu2/" target="_blank">LinkedIn</a>
-    </p>
-  </section>
-
-  <footer>
-    © 2026 Your Name
-  </footer>
-
+    <footer>© 2026 John Hu</footer>
+  </div>
 </body>
 </html>

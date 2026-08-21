@@ -1,0 +1,3 @@
+# Replace placeholder videos by setting src on each .slide-video in index.html
+# Current placeholders load from Pexels (requires internet).
+# For your own clips, save as soldering.mp4 etc. and point src to assets/videos/
